@@ -2,7 +2,7 @@ import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { DeletePersonCommand } from '../impl/delete-person.command';
 import { DeleteResult, Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Person } from 'src/entities/person/person';
+import { Person } from 'src/entities/person';
 import { NotFoundException } from '@nestjs/common';
 import { retry } from 'rxjs';
 

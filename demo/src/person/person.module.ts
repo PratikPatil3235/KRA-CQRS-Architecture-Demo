@@ -3,7 +3,7 @@ import { PersonController } from './person.controller';
 import { CqrsModule } from '@nestjs/cqrs';
 import { GetPersonsHandler } from './queries/handler/get-persons.handler';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Person } from 'src/entities/person/person';
+import { Person } from 'src/entities/person';
 import { CreatePersonHandler } from './commands/handler/create-person.handler';
 import { UpdatePersonHandler } from './commands/handler/update-person.handler';
 import { DeletePersonHandler } from './commands/handler/delete-person.handler';

@@ -2,11 +2,11 @@ import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { PersonModule } from './person/person.module';
-import { Person } from './entities/person/person';
-
+import { Person } from './entities/person';
 
 @Module({
-  imports: [TypeOrmModule.forRootAsync({
+  imports: [
+    TypeOrmModule.forRootAsync({
       imports: [
         ConfigModule.forRoot({
           isGlobal: true,
@@ -24,7 +24,9 @@ import { Person } from './entities/person/person';
         entities: [Person],
       }),
       inject: [ConfigService],
-    }),PersonModule],
+    }),
+    PersonModule,
+  ],
   controllers: [],
   providers: [],
 })

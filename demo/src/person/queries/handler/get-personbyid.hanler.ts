@@ -1,6 +1,6 @@
 import { IQueryHandler, QueryHandler } from "@nestjs/cqrs";
 import { GetPersonByIDQuery } from "../impl/get-personbyid.query";
-import { Person } from "src/entities/person/person";
+import { Person } from "src/entities/person";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Repository } from "typeorm";
 import { NotFoundException } from "@nestjs/common";

@@ -1,6 +1,6 @@
 import { CommandHandler, ICommandHandler } from "@nestjs/cqrs";
 import { CreatePersonCommand } from "../impl/create-person.command";
-import { Person } from "src/entities/person/person";
+import { Person } from "src/entities/person";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Repository } from "typeorm";
 
