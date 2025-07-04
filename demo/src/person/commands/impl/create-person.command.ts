@@ -1,4 +1,4 @@
 export class CreatePersonCommand {
-    name:string;
-    age:number;
+  name: string;
+  age: number;
 }
